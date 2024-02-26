@@ -16,10 +16,10 @@
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
         <li data-filter='*' class='filter-active'>Tots</li> 
             <?php
-    // Obtener todas las categorías de WooCommerce
+
     $categories = $woocommerce->get('products/categories'); 
 
-    // Mostrar las categorías como filtros
+
     foreach ($categories as $category) {
       echo "<li data-filter='.filter-" . $category->slug . "'>" . $category->name . "</li>";
     }
@@ -29,16 +29,14 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
             <?php
-    // Obtener todos los productos de WooCommerce
+
     $products = $woocommerce->get('products');
 
-    // Mostrar los productos filtrados por categoría
     foreach ($products as $product) {
         $product_name = $product->name;
         $product_image = $product->images[0]->src;
         $product_permalink = $product->permalink;
 
-        // Obtener las categorías del producto
         $product_categories = [];
         foreach ($product->categories as $category) {
             $product_categories[] = $category->slug;
