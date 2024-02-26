@@ -11,7 +11,7 @@
         <label for="description">Descripció:</label><br>
         <textarea id="description" name="description"></textarea><br><br>
         <label for="image">Imatge:</label>
-        <input type="file" id="image" name="image"><br><br>&nbsp;
+        <input type="file" id="image" name="image"><br><br>
         <input type="submit" value="Afegir producte">
     </form>
 </body>
