@@ -593,13 +593,6 @@ section {
   color: #47b2e4;
   line-height: 1;
 }
-.about .content ul img {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  width: 50px;
-
-}
 
 .about .content p:last-child {
   margin-bottom: 0;
