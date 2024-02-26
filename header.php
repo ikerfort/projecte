@@ -50,7 +50,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Inici</a></li>
-          <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre Nosaltres</a></li>
           <li><a class="nav-link scrollto" href="#producte">Productes</a></li>
           <li><a class="nav-link scrollto" href="#serveis">Serveis</a></li>
           
