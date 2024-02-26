@@ -17,7 +17,7 @@
         <li data-filter='*' class='filter-active'>Tots</li> 
             <?php
     // Obtener todas las categorías de WooCommerce
-    $categories = $woocommerce->get('products/categories');
+    $categories = $woocommerce->get('products/categories'); 
 
     // Mostrar las categorías como filtros
     foreach ($categories as $category) {
