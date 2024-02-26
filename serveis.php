@@ -12,7 +12,7 @@
         <div class="icon-box text-center"> 
           <div class="icon"><i class="bx bx-rotate-right"></i></div>
           <h4><a href="servei_actualitzar.php">Actualitzar</a></h4>
-          <p></p>
+          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
         </div>
       </div>
 
@@ -20,7 +20,7 @@
         <div class="icon-box text-center">
           <div class="icon"><i class="bx bx-xmark"></i></div>
           <h4><a href="servei_actualitzar.php">Esborrar</a></h4>
-          <p></p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
         </div>
       </div>
 
@@ -28,7 +28,7 @@
         <div class="icon-box text-center">
           <div class="icon"><i class="bx bx-plus"></i></div>
           <h4><a href="servei_actualitzar.php">Afegir</a></h4>
-          <p></p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
         </div>
       </div>
     </div>
