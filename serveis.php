@@ -4,7 +4,7 @@
 
     <div class="section-title text-center">
       <h2>Serveis</h2>
-      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <p></p>
     </div>
 
     <div class="row justify-content-center"> 
@@ -12,7 +12,7 @@
         <div class="icon-box text-center"> 
           <div class="icon"><i class="bx bx-rotate-right"></i></div>
           <h4><a href="servei_actualitzar.php">Actualitzar</a></h4>
-          <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          <p></p>
         </div>
       </div>
 
@@ -20,7 +20,7 @@
         <div class="icon-box text-center">
           <div class="icon"><i class="bx bx-xmark"></i></div>
           <h4><a href="servei_actualitzar.php">Esborrar</a></h4>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <p></p>
         </div>
       </div>
 
@@ -28,7 +28,7 @@
         <div class="icon-box text-center">
           <div class="icon"><i class="bx bx-plus"></i></div>
           <h4><a href="servei_actualitzar.php">Afegir</a></h4>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          <p></p>
         </div>
       </div>
     </div>
