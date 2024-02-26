@@ -3,14 +3,13 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About Us</h2>
+          <h2>Sobre nosaltres</h2>
         </div>
 
         <div class="row content">
           <div class="col-lg-6">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Som un grup que treballa per garantir els millors productes i periférics qualitat/preu.
             </p>
             <ul>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
