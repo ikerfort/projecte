@@ -1,29 +1,34 @@
 <?php
-include('connexio_woo.php');
 
-if (isset($_POST['product_id'])) {
-    $product_id = $_POST['product_id'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $product_name = $_POST["product_name"];
+    $product_price = $_POST["product_price"];
+    $product_id = $_POST["product_id"];
+    $product_description = $_POST["product_description"];
+    // $product_image = $_POST["product_image"];
+.
+    if (!empty($product_name) && !empty($product_price)) {
+        include('connexio_woo.php');
 
-    $product = $woocommerce->get('products/' . $product_id);
-    
-    ?>
-    <form action="actualitzar_producte.php" method="post">
-        <input type="hidden" name="product_id" value="<?php echo $product->id; ?>">
+        
+        $data = [
+            'regular_price' => $product_price,
+        ];
+        
+        print_r($woocommerce->put('products/'.$product_id, $data));
+        
 
-        <label for="product_name">Nom del producte:</label>
-        <input type="text" id="product_name" name="product_name" value="<?php echo $product->name; ?>" required> <br><br>
-
-        <label for="product_price">Preu del producte:</label>
-        <input type="number" id="product_price" name="product_price" value="<?php echo $product->price; ?>" required> <br><br>
-
-        <label for="product_description">Descripció del producte:</label>
-        <input type="text" id="product_description" name="product_description" value="<?php echo $product->description; ?>" required>
-
-
-        <br><br><input type="submit" value="Actualitzar producte">
-    </form>
-    <?php
+        /* if ($updated) {
+            header("Location: index.php#portfolio");
+            exit();
+        } else {
+            echo "Error en l'actualització del producte.";
+        } */
+    } else {
+        echo "Tots els camps són obligatoris.";
+    }
 } else {
-    echo 'No s\'ha seleccionat cap producte per actualitzar.';
+    
+    echo "Accés no permès.";
 }
 ?>
