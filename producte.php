@@ -7,7 +7,7 @@
 
         <div class="section-title">
             <h2>Productes</h2>
-            <p>hola bon dia</p>
+            <p>Aquí trobarás una selecció de productes escollits meticulosament per el millor preu i la millor cualitat. </p>
         </div>
 
         <!-- bucle categories -->
