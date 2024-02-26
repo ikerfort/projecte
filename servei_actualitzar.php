@@ -3,8 +3,6 @@ include('connexio_woo.php');
 
 $products = $woocommerce->get('products');
 
- 
-
     ?>
     <form action="servei_actualitzar_id.php" method="post">
         <label for="product_to_update">Selecciona el producte a modificar:</label>
@@ -18,6 +16,6 @@ $products = $woocommerce->get('products');
             ?>
         </select>
 
-
         <input type="submit" value="Seleccionar producte">
     </form>
+              

@@ -1,39 +1,30 @@
 <?php
+include('connexio_woo.php');
 
-// Verifica si s'han enviat dades del formulari
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtén les dades del formulari
-    $product_name = $_POST["product_name"];
-    $product_price = $_POST["product_price"];
-    $product_id = $_POST["product_id"];
+// Verifiquem si s'ha enviat un identificador de producte
+if (isset($_POST['product_id'])) {
+    $product_id = $_POST['product_id'];
 
-    // Pots afegir altres camps segons les teves necessitats
+    // Obtenim la informació del producte seleccionat
+    $product = $woocommerce->get('products/' . $product_id);
+    
+    // Mostrem el formulari amb els paràmetres actuals del producte
+    ?>
+    <form action="actualitzar_producte.php" method="post">
+        <input type="hidden" name="product_id" value="<?php echo $product->id; ?>">
 
-    // Verifica que les dades no siguin buides
-    if (!empty($product_name) && !empty($product_price)) {
-        // Inclou el fitxer de WooCommerce (ajusta la ruta si és necessari)
-        include('connexio_woo.php');
+        <label for="product_name">Nom del producte:</label>
+        <input type="text" id="product_name" name="product_name" value="<?php echo $product->name; ?>" required>
 
-        // Obté l'ID del producte que es vol actualitzar (ajusta la manera com obtens aquesta informació)
-        $product_id = $_POST["product_id"];
+        <label for="product_price">Preu del producte:</label>
+        <input type="number" id="product_price" name="product_price" value="<?php echo $product->price; ?>" required>
 
-        // Actualitza les dades del producte
-      
-        // Verifica si s'ha actualitzat correctament
-        if ($updated) {
-            // Redirigeix a la pàgina principal amb l'àncora #portfolio
-            header("Location: index.php#portfolio");
-            exit();
-        } else {
-            // Hi ha hagut un error en l'actualització
-            echo "Error en l'actualització del producte.";
-        }
-    } else {
-        // Algú dels camps està buit
-        echo "Tots els camps són obligatoris.";
-    }
+        <!-- Afegiu altres paràmetres del producte aquí -->
+
+        <input type="submit" value="Actualitzar producte">
+    </form>
+    <?php
 } else {
-    // La pàgina no s'ha cridat mitjançant un formulari POST, redirigeix a alguna altra pàgina o mostra un missatge d'error.
-    echo "Accés no permès.";
+    echo 'No s\'ha seleccionat cap producte per actualitzar.';
 }
 ?>
