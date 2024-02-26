@@ -12,9 +12,9 @@
               Som un grup que treballa per garantir els millors productes i periférics qualitat/preu.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Rapidesa.</li>
+              <li><i class="ri-check-double-line"></i> Productes actualitzats constantment.</li>
+              <li><i class="ri-check-double-line"></i> Màxima qualitat.</li>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
