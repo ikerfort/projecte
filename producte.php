@@ -7,7 +7,7 @@
 
         <div class="section-title">
             <h2>Productes</h2>
-            <p>Aquí trobarás una selecció de productes escollits meticulosament per el millor preu i la millor cualitat. </p>
+            <p>Aquí trobaràs una selecció de productes escollits meticulosament per el millor preu i la millor qualitat. </p>
         </div>
 
         <!-- bucle categories -->
