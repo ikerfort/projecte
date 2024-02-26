@@ -24,7 +24,7 @@
           Carrer Garcia Lorca, 12 <br>
           Vilanova i la Geltrú, Barcelona<br>
           España <br><br>
-          <strong>Mòbil:</strong> +34 605 482 567<br>
+          <strong>Mòbil:</strong> +34 603 482 567<br>
           <strong>Email:</strong> info@arsha.com<br>
         </p>
       </div>
