@@ -1,9 +1,23 @@
-<form action="servei_actualitzar_id.php" method="post">
-  <label for="product_name">Nom del producte:</label>
-  <input type="text" id="product_name" name="product_name">
+<?php
+include('connexio_woo.php');
 
-  <label for="product_price">Preu del producte:</label>
-  <input type="text" id="product_price" name="product_price">
+$products = $woocommerce->get('products');
 
-  <input type="submit" value="Actualitzar">
-</form>
+ 
+
+    ?>
+    <form action="servei_actualitzar_id.php" method="post">
+        <label for="product_to_update">Selecciona el producte a modificar:</label>
+        <select id="product_to_update" name="product_id">
+            <?php
+              foreach ($products as $product) {
+                ?>
+                <option value="<?php echo $product->id; ?>"><?php echo $product->name; ?></option>
+                <?php
+              }
+            ?>
+        </select>
+
+
+        <input type="submit" value="Seleccionar producte">
+    </form>
