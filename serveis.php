@@ -18,7 +18,7 @@
 
       <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
         <div class="icon-box text-center">
-          <div class="icon"><i class="bx bx-xmark"></i></div>
+          <div class="icon"><<img src="assets/img/xmark.png"></div>
           <h4><a href="servei_actualitzar.php">Esborrar</a></h4>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
         </div>
