@@ -21,7 +21,6 @@
             <p>
             Amb dedicació incansable i compromís amb l'excel·lència, el nostre equip de treballadors vetlla per oferir-vos productes informàtics i perifèrics de darrera generació. Mantenim un estàndard d'actualització constant, garantint la màxima qualitat al millor preu. El nostre esforç es tradueix en la satisfacció dels nostres clients.
             </p>
-            <a href="#" class="btn-learn-more">Som-hi</a>
           </div>
         </div>
 
