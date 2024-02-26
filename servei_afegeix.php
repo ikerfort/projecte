@@ -9,7 +9,7 @@
         <label for="name">Nom del producte:</label><br>
         <input type="text" id="name" name="name"><br>
         <label for="description">Descripció:</label><br>
-        <textarea id="description" name="description"></textarea><br>
+        <textarea id="description" name="description"></textarea><br><br>
         <input type="submit" value="Afegir producte">
     </form>
 </body>
