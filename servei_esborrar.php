@@ -29,11 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['product_id'])) {
     $result = $woocommerce->delete("products/$product_id", ['force' => true]);
 
     if ($result) {
-        echo "Producto eliminado con éxito.";
-        header("Location: index.php");
+        echo "Producte esborrat amb éxit.";
     } else {
-        echo "Error al eliminar el producto.";
+        echo "Error al esborrar el producte.";
     }
+header("Location: index.php");
 }
 ?>
    
