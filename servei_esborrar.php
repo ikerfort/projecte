@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['product_id'])) {
 
     if ($result) {
         echo "Producto eliminado con éxito.";
+        header("Location: index.php");
     } else {
         echo "Error al eliminar el producto.";
     }
