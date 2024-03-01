@@ -1,5 +1,6 @@
 <?php
 include('connexio_woo.php');
+$products = $woocommerce->get('products');
 
     ?>
     <form action="servei_esborrar.php" method="post">
@@ -20,7 +21,6 @@ include('connexio_woo.php');
 </html>
 
 <?php
-$products = $woocommerce->get('products');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['product_id'])) {
     $product_id = $_POST['product_id'];
