@@ -10,10 +10,9 @@
         <input type="text" id="name" name="name"><br><br>
         <label for="description">Descripció:</label><br>
         <textarea id="description" name="description"></textarea><br><br>
-        <label for="image">Imatge:</label>
-        <input type="file" id="image" name="image"><br><br>
+        <label for="price">Preu:</label><br>
+        <input type="text" id="price" name="price"><br><br>
         <input type="submit" value="Afegir producte">
     </form>
 </body>
 </html>
-
