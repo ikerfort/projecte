@@ -1,6 +1,6 @@
 <?php
 
-require_once('http://192.168.56.11/wordpress');
+require_once('connexio_woo.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {   
     $name = $_POST['name'];
